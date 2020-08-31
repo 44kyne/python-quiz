@@ -5,19 +5,24 @@ questions = [
 				{"question":"日本にある駅名は？","answer":"B"},
 			]
 
-# 選択支を作成
+# 選択肢を作成
 selections = [
 				{"A":"コアラはユーカリしか食べない。","B":"パンダは笹の葉しか食べない。"},
 				{"A":"出版社の記者","B":"バスガイド"},
 				{"A":"黄","B":"緑"}
 			]
 
-"""
-for question in questions:
-	print(question["question"])
-	print(question["answer"])
-"""
+# 問題文と選択肢の表示
+for index in range(len(questions)):
 
-for selection in selections:
-	print(selection['A'])
-	print(selection['B'])
+	#問題文の取得
+	question = questions[index]['question']
+
+	# 選択肢AとBを取得
+	selectionA = selections[index]['A']
+	selectionB = selections[index]['B']
+
+	print("Q{0} {1}".format((index + 1),question))
+	print("A:{0} {1}".format(selectionA,selectionB))
+
+	
