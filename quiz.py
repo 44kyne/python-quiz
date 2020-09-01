@@ -25,4 +25,8 @@ for index in range(len(questions)):
 	print("Q{0} {1}".format((index + 1),question))
 	print("A:{0} {1}".format(selectionA,selectionB))
 
-	
+	# ユーザーの値を受け取る
+	userInput = input("回答を入力：")
+
+	print("入力された値は {0} です".format(userInput))
+
