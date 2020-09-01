@@ -30,3 +30,9 @@ for index in range(len(questions)):
 
 	print("入力された値は {0} です".format(userInput))
 
+	# 答えを確認
+	if userInput.upper() == questions[index]['answer']:
+		print("正解です")
+	else:
+		print("不正解です")
+		
